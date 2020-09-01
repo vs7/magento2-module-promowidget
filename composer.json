@@ -1,0 +1,21 @@
+{
+    "name": "vs7/promowidget",
+    "description": "Promo Widget",
+    "require": {
+        "magento/framework": "*"
+    },
+    "type": "magento2-module",
+    "version": "0.1.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "VS7\\PromoWidget\\": ""
+        }
+    }
+}

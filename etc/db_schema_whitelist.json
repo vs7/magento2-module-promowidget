@@ -1,0 +1,22 @@
+{
+    "vs7_promowidget_banner": {
+        "column": {
+            "banner_id": true,
+            "rule_id": true,
+            "name": true,
+            "url_key": true,
+            "image": true,
+            "text": true,
+            "position": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "index": {
+            "VS7_PROMOWIDGET_BANNER_RULE_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "VS7_PROMOWIDGET_BANNER_RULE_ID_SALESRULE_RULE_ID": true
+        }
+    }
+}
