@@ -1,5 +1,5 @@
 {
-    "name": "vs7/promowidget",
+    "name": "vs7/magento2-module-promowidget",
     "description": "Promo Widget",
     "require": {
         "magento/framework": "*"

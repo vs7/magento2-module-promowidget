@@ -5,12 +5,15 @@ namespace VS7\PromoWidget\Plugin;
 class DataProvider
 {
     protected $_bannerFactory;
+    protected $_bannerHelper;
 
     public function __construct(
-        \VS7\PromoWidget\Model\BannerFactory $bannerFactory
+        \VS7\PromoWidget\Model\BannerFactory $bannerFactory,
+        \VS7\PromoWidget\Helper\Data $bannerHelper
     )
     {
         $this->_bannerFactory = $bannerFactory;
+        $this->_bannerHelper = $bannerHelper;
     }
 
     public function afterGetData(
@@ -21,10 +24,11 @@ class DataProvider
         $banner = $this->_bannerFactory->create();
         $ruleId = key($data);
         $banner->load($ruleId, 'rule_id');
+        $image = $this->_bannerHelper->prepareImage($banner->getImage());
         $data[$ruleId]['vs7_promowidget'] = array(
             'name' => $banner->getName(),
             'url_key' => $banner->getUrlKey(),
-            'image' => $banner->getImage(),
+            'image' => array($image),
             'position' => $banner->getPosition(),
             'text' => $banner->getText()
         );
