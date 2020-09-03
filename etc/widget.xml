@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="vs7_promowidget_bannerslist" class="VS7\PromoWidget\Block\Widget\BannersList">
+        <label translate="true">Promo Banners List</label>
+        <description translate="true">Lists all available rules for current customer</description>
+<!--        <parameters>-->
+<!--            <parameter name="template" xsi:type="select" visible="true" sort_order="130" source_model="MGS\Blog\Model\System\Config\Widget\Template">-->
+<!--                <label translate="true">Template</label>-->
+<!--            </parameter>-->
+<!--        </parameters>-->
+    </widget>
+</widgets>

@@ -32,6 +32,7 @@ class DataProvider
             'position' => $banner->getPosition(),
             'text' => $banner->getText()
         );
+        if (empty($image)) unset($data[$ruleId]['vs7_promowidget']['image']);
         return $data;
     }
 }
