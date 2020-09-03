@@ -1,6 +1,6 @@
 {
     "name": "vs7/magento2-module-promowidget",
-    "description": "Promo Widget",
+    "description": "Promo Widget extension for Magento 2. Adds Widget Banner section for Sales Promo Quote edit form.",
     "require": {
         "magento/framework": "*"
     },
@@ -10,7 +10,6 @@
         "OSL-3.0",
         "AFL-3.0"
     ],
-    "description": "Adds Widget Banner section for Sales Promo Quote edit form.",
     "keywords": [
         "magento",
         "magento2",
