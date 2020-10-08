@@ -3,10 +3,5 @@
     <widget id="vs7_promowidget_bannerslist" class="VS7\PromoWidget\Block\Widget\BannersList">
         <label translate="true">Promo Banners List</label>
         <description translate="true">Lists all available rules for current customer</description>
-<!--        <parameters>-->
-<!--            <parameter name="template" xsi:type="select" visible="true" sort_order="130" source_model="MGS\Blog\Model\System\Config\Widget\Template">-->
-<!--                <label translate="true">Template</label>-->
-<!--            </parameter>-->
-<!--        </parameters>-->
     </widget>
 </widgets>
