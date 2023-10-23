@@ -1,10 +1,12 @@
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();?>
+<?php $baseUrl = $objectManager->get('Magento\Store\Model\StoreManagerInterface')->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_WEB);?>
 <?php if ($block->getCollection()) : ?>
     <div class="vs7_promowidget-container">
     <?php if ($block->getCollection()->getSize() > 0) : ?>
         <?php foreach ($block->getCollection() as $banner): ?>
             <div class="vs7_promowidget-banner">
                 <a href="<?php echo $banner->getUrlKey(); ?>">
-                    <img src="<?php echo $banner->getImage(); ?>" alt="<?php echo $banner->getName(); ?>" title="<?php echo $banner->getName(); ?>"/>
+                    <img src="<?php echo rtrim($baseUrl, '/').$banner->getImage(); ?>" alt="<?php echo $banner->getName(); ?>" title="<?php echo $banner->getName(); ?>"/>
                 </a>
             </div>
         <?php endforeach; ?>
